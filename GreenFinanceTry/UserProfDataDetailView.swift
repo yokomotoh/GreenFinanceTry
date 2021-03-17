@@ -20,9 +20,10 @@ struct UserProfDataDetailView: View {
         self.element = elem
         self._editFirstName = State(initialValue: elem.firstName )
         self._editAge = State(initialValue: elem.age )
-
     }
+    
     var body: some View {
+        NavigationView {
         VStack {
             if editMode {
 
@@ -57,6 +58,8 @@ struct UserProfDataDetailView: View {
                 }
             }
 
+        }
+        .navigationTitle("Profile of \(element.firstName)")
         }
         
     }

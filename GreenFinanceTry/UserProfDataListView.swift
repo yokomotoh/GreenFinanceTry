@@ -13,8 +13,7 @@ struct UserProfDataListView: View {
     @State private var showProfileSheet = false
     
     @Environment(\.managedObjectContext) var managedObjectContext
-    @FetchRequest(entity: UserProfData.entity()
-                  , sortDescriptors: [])
+    @FetchRequest(entity: UserProfData.entity(), sortDescriptors: [])
     var userProfDatas: FetchedResults<UserProfData>
 
     @State private var showingDetail = false

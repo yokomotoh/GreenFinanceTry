@@ -18,11 +18,18 @@ struct TabBarView: View {
                         icon: { Image(systemName: "1.circle") }
 )
                 }
+            ProjectListView()
+                .tabItem{
+                    Label(
+                        title: { Text("Project") },
+                        icon: { Image(systemName: "2.circle") }
+)
+                }
             UserProfDataListView()
                 .tabItem{
                     Label(
                         title: { Text("Profile") },
-                        icon: { Image(systemName: "2.circle") }
+                        icon: { Image(systemName: "3.circle") }
 )
                 }
         }

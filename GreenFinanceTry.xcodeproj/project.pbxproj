@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFB23B362606647C007981E6 /* ProjectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB23B352606647C007981E6 /* ProjectListView.swift */; };
+		BFB23B3A260667D4007981E6 /* Project+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB23B38260667D4007981E6 /* Project+CoreDataClass.swift */; };
+		BFB23B3B260667D4007981E6 /* Project+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB23B39260667D4007981E6 /* Project+CoreDataProperties.swift */; };
+		BFB23B3F26066B6C007981E6 /* ProjectSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB23B3E26066B6C007981E6 /* ProjectSheet.swift */; };
+		BFB23B42260671E6007981E6 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB23B41260671E6007981E6 /* ProjectDetailView.swift */; };
 		BFD2FBD72601630F000A7590 /* GreenFinanceTryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FBD62601630F000A7590 /* GreenFinanceTryApp.swift */; };
 		BFD2FBD92601630F000A7590 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD2FBD82601630F000A7590 /* ContentView.swift */; };
 		BFD2FBDB26016313000A7590 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD2FBDA26016313000A7590 /* Assets.xcassets */; };
@@ -24,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFB23B352606647C007981E6 /* ProjectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListView.swift; sourceTree = "<group>"; };
+		BFB23B38260667D4007981E6 /* Project+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BFB23B39260667D4007981E6 /* Project+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BFB23B3E26066B6C007981E6 /* ProjectSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSheet.swift; sourceTree = "<group>"; };
+		BFB23B41260671E6007981E6 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		BFD2FBD32601630F000A7590 /* GreenFinanceTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenFinanceTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD2FBD62601630F000A7590 /* GreenFinanceTryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenFinanceTryApp.swift; sourceTree = "<group>"; };
 		BFD2FBD82601630F000A7590 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,9 +63,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BFB23B3D26066B23007981E6 /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				BFD2FC2E2602AB53000A7590 /* VideoOnboardingScreenView.swift */,
+				BFD2FC312602ABEF000A7590 /* UIPlayerView.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
 		BFD2FBCA2601630F000A7590 = {
 			isa = PBXGroup;
 			children = (
+				BFB23B38260667D4007981E6 /* Project+CoreDataClass.swift */,
+				BFB23B39260667D4007981E6 /* Project+CoreDataProperties.swift */,
 				BFD2FBEB260163B9000A7590 /* UserProfData+CoreDataClass.swift */,
 				BFD2FBEC260163B9000A7590 /* UserProfData+CoreDataProperties.swift */,
 				BFD2FBD52601630F000A7590 /* GreenFinanceTry */,
@@ -77,11 +98,13 @@
 				BFD2FBD62601630F000A7590 /* GreenFinanceTryApp.swift */,
 				BFD2FBD82601630F000A7590 /* ContentView.swift */,
 				BFD2FC382602B60D000A7590 /* TabBarView.swift */,
-				BFD2FC2E2602AB53000A7590 /* VideoOnboardingScreenView.swift */,
-				BFD2FC312602ABEF000A7590 /* UIPlayerView.swift */,
+				BFB23B3D26066B23007981E6 /* Onboard */,
 				BFD2FBF02601646B000A7590 /* UserProfDataListView.swift */,
+				BFB23B352606647C007981E6 /* ProjectListView.swift */,
 				BFD2FBF326016E6C000A7590 /* UserProfDataSheet.swift */,
+				BFB23B3E26066B6C007981E6 /* ProjectSheet.swift */,
 				BFD2FC0226023172000A7590 /* UserProfDataDetailView.swift */,
+				BFB23B41260671E6007981E6 /* ProjectDetailView.swift */,
 				BFD2FBDA26016313000A7590 /* Assets.xcassets */,
 				BFD2FBDF26016313000A7590 /* Persistence.swift */,
 				BFD2FBE426016313000A7590 /* Info.plist */,
@@ -170,14 +193,19 @@
 			files = (
 				BFD2FBE326016313000A7590 /* GreenFinanceTry.xcdatamodeld in Sources */,
 				BFD2FC2F2602AB53000A7590 /* VideoOnboardingScreenView.swift in Sources */,
+				BFB23B42260671E6007981E6 /* ProjectDetailView.swift in Sources */,
 				BFD2FC0326023172000A7590 /* UserProfDataDetailView.swift in Sources */,
+				BFB23B3A260667D4007981E6 /* Project+CoreDataClass.swift in Sources */,
 				BFD2FBE026016313000A7590 /* Persistence.swift in Sources */,
 				BFD2FBED260163B9000A7590 /* UserProfData+CoreDataClass.swift in Sources */,
 				BFD2FBF426016E6C000A7590 /* UserProfDataSheet.swift in Sources */,
+				BFB23B3B260667D4007981E6 /* Project+CoreDataProperties.swift in Sources */,
 				BFD2FBD92601630F000A7590 /* ContentView.swift in Sources */,
 				BFD2FBF12601646B000A7590 /* UserProfDataListView.swift in Sources */,
+				BFB23B362606647C007981E6 /* ProjectListView.swift in Sources */,
 				BFD2FBD72601630F000A7590 /* GreenFinanceTryApp.swift in Sources */,
 				BFD2FC322602ABEF000A7590 /* UIPlayerView.swift in Sources */,
+				BFB23B3F26066B6C007981E6 /* ProjectSheet.swift in Sources */,
 				BFD2FC392602B60D000A7590 /* TabBarView.swift in Sources */,
 				BFD2FBEE260163B9000A7590 /* UserProfData+CoreDataProperties.swift in Sources */,
 			);

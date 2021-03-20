@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="budget" attributeType="String"/>
+        <attribute name="category" attributeType="String"/>
+        <attribute name="created_date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="description_project" attributeType="String"/>
+        <attribute name="finished_date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="picture" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="video" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="UserProfData" representedClassName="UserProfData" syncable="YES">
         <attribute name="accountName" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
@@ -8,5 +19,6 @@
     </entity>
     <elements>
         <element name="UserProfData" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Project" positionX="-63" positionY="9" width="128" height="164"/>
     </elements>
 </model>

@@ -17,8 +17,9 @@ extension UserProfData {
     }
 
     @NSManaged public var id: UUID?
-    @NSManaged public var firstName: String
-    @NSManaged public var age: String
+    @NSManaged public var accountName: String
+    @NSManaged public var email: String
+    @NSManaged public var password: String
 
 }
 

@@ -16,8 +16,9 @@ struct PersistenceController {
         for _ in 0..<10 {
             let newItem = UserProfData(context: viewContext)
             newItem.id = UUID()
-            newItem.firstName = "Batiste"
-            newItem.age = "20"
+            newItem.accountName = "Baptiste"
+            newItem.email = "baptiste@moulin.com"
+            newItem.password = "baptistemoulin"
         }
         do {
             try viewContext.save()

@@ -10,10 +10,11 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            Text("Project list")
+            //Text("Project list")
+            VideoOnboardingScreenView()
                 .tabItem{
                     Label(
-                        title: { Text("Projects") },
+                        title: { Text("Onboard") },
                         icon: { Image(systemName: "1.circle") }
 )
                 }

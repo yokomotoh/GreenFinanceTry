@@ -37,7 +37,7 @@ struct UserProfDataListView: View {
                         label: {
                             HStack{
                                 //Text("Hello")
-                                Text(element.firstName )
+                                Text(element.accountName )
                                 //Text(element.age)
                             }
                             

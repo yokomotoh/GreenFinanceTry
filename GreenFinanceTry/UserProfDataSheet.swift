@@ -2,7 +2,7 @@
 //  UserProfDataSheet.swift
 //  GreenFinanceTry
 //
-//  Created by vincent schmitt on 16/03/2021.
+//  Created by yoko on 16/03/2021.
 //
 
 import SwiftUI
@@ -11,12 +11,13 @@ struct UserProfDataSheet: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext
     
-    @State var myFirstName = ""
-    @State var myLastName = ""
+    @State var myAccountName = ""
+    //@State var myLastName = ""
     @State var myEmail = ""
-    @State var myAddress = ""
-    @State var myAge = ""
-    @State var myProfilePhoto = ""
+    //@State var myAddress = ""
+    //@State var myAge = ""
+    //@State var myProfilePhoto = ""
+    @State var myPassword = ""
     
     @Binding var isShown: Bool
     
@@ -24,34 +25,25 @@ struct UserProfDataSheet: View {
         //Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         VStack {
         Form {
-            Section(header: Text("First Name")) {
-                TextField("", text: $myFirstName)
+            Section(header: Text("Account Name")) {
+                TextField("", text: $myAccountName)
             }
-            Section(header: Text("Age")) {
-                TextField("", text: $myAge)
-            }
-            /*
-            Section(header: Text("Last Name")) {
-                TextField("", text: $myLastName)
-            }
+            
             Section(header: Text("Email")) {
                 TextField("", text: $myEmail)
             }
-            Section(header: Text("Address")) {
-                TextField("", text: $myAddress)
+            Section(header: Text("Password")) {
+                TextField("", text: $myPassword)
             }
-            
-            Section(header: Text("Profile Photo")) {
-                TextField("", text: $myProfilePhoto)
-            }
-            */
+
         }
         Spacer()
         Button(action: {
             let newUserProfileData = UserProfData(context: self.managedObjectContext)
             newUserProfileData.id = UUID()
-            newUserProfileData.firstName = myFirstName
-            newUserProfileData.age = myAge
+            newUserProfileData.accountName = myAccountName
+            newUserProfileData.email = myEmail
+            newUserProfileData.password = myPassword
             do {
                 try self.managedObjectContext.save()
             } catch {
